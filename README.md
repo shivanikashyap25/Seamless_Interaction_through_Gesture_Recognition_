@@ -137,7 +137,7 @@ Whether you’re an AI enthusiast, accessibility advocate, or developer—jump i
 **M Shivani Kashyap**  
 🔗 [LinkedIn](https://www.linkedin.com/in/m-shivani-kashyap-245648262/)
 💻 [GitHub](https://github.com/shivanikashyap25)
-🌐 [Project Page][(https://github.com/shivanikashyap25/Seamless_Interaction_through_Gesture_Recognition_)]
+🌐 [Project Page](https://github.com/shivanikashyap25/Seamless_Interaction_through_Gesture_Recognition_)
 
 
 > 🌟 *Let’s build interfaces that feel more natural, human, and empowering—one gesture at a time.*
