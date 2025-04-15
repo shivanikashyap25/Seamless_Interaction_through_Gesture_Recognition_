@@ -134,7 +134,7 @@ Whether you’re an AI enthusiast, accessibility advocate, or developer—jump i
 
 ## 📬 Connect with Me
 
-**Yashas D**  
+**M Shivani Kashyap**  
 🔗 [LinkedIn](https://www.linkedin.com/in/m-shivani-kashyap-245648262/)
 💻 [GitHub](https://github.com/shivanikashyap25)
 🌐 [Project Page][(https://github.com/shivanikashyap25/Seamless_Interaction_through_Gesture_Recognition_)]
