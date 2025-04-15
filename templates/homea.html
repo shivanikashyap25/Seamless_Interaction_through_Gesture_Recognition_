@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 40;
+            overflow: hidden;
+            background-color: #837d7d; /* Set a dark background */
+            color: #ffffff; /* Set default text color to white */
+        }
+    
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: transparent; /* Remove white background */
+            color: #ffffff; /* Ensure text remains visible on dark background */
+        }
+    
+        .logo {
+            margin: 0;
+            color: #ff6600; /* Logo text color */
+        }
+
+        .logo a {
+        text-decoration: none; /* Remove underline */
+        color:#ff6600; /* Set logo color to orange */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 30px;
+            color: #e7e4e1; /* Orange headings for better contrast */
+        }
+    
+        p {
+            text-align: justify; 
+            color: #cccccc; /* Lighter color for paragraphs */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div>  
+        </div> 
+        <div class="content">
+            <h1>AIR<br><span>GESTURE</span><br>SUITE</h1>
+            <h2>About</h2>
+            <p class="par">
+                A system designed for the human-computer interaction without touching any tool, it simulates it virtually through three gadgets: a gesture-controlled mouse with voice recognition facilities, an air-based keyboard, and a drawing canvas. In order to interpret the hand movements, gestures, and voice commands that are captured by the webcam and microphone, the system applies computer vision, machine learning, and speech recognition technologies.
+                Hand motions made by the virtual mouse communicate to the computer what actions are to be done and where to locate the cursor. Additionally, the computer recognizes the voice commands which are an aide to such usage. The virtual keyboard, on its part, suggests finger positions through the air as keystrokes, and the virtual drawing tool is the one that notices the hand actions that it changes into digital artwork. All of these were developed by the OpenCV and MediaPipe frameworks, the programs that allow correct real-time hand tracking and gesture identification. The findings are a valuable contribution to computer interaction formation, which can lead to a decrease in the use of physical interaction devices and a shift to more natural interaction methods.
+            </p>
+            <h2>Mission</h2>
+            <p class="par">
+                Our mission is to transform digital interaction by leveraging advanced AI and gesture recognition technologies. We aspire to deliver a seamless, intuitive, and accessible platform that empowers users to interact with virtual tools in innovative, hands-free ways. Through the integration of cutting-edge frameworks like Mediapipe and OpenCV, we aim to simplify everyday tasks, boost efficiency, and make technology universally accessible.
+            </p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}"> 
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 40;
+            overflow: hidden;
+            background-color: #837d7d; /* Set a dark background */
+            color: #ffffff; /* Set default text color to white */
+        }
+    
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: transparent; /* Remove white background */
+            color: #ffffff; /* Ensure text remains visible on dark background */
+        }
+    
+        .logo {
+            margin: 0;
+            color: #ff6600; /* Logo text color */
+        }
+    
+        .logo a {
+        text-decoration: none; /* Remove underline */
+        color:#ff6600; /* Set logo color to orange */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 30px;
+            color: #e7e4e1; /* Orange headings for better contrast */
+        }
+    
+        p {
+            text-align: justify; 
+            color: #cccccc; /* Lighter color for paragraphs */
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+        </div> 
+        <div class="content">
+            <h1>Virtual <span>Mouse</span><br>With <span>AI Assistance</span><br></h1>
+            <h3>How it Recognizes Hand Gestures</h3>   
+            <p class="par">Hand Landmark Detection: Using Mediapipe's model, the system tracks 21 hand landmarks in real-time, mapping them to specific mouse functions.</p>
+            <p class="par">Gesture Recognition: Specific hand gestures are recognized based on the arrangement and movement of hand landmarks, triggering actions like left-click, right-click, drag, and scroll.</p>
+            <h3>Mouse Actions and Corresponding Gestures</h3>
+            <p class="par">Move Cursor: The cursor follows the motion of the user's index finger, acting as the pointer.</p>
+            <p class="par">Left Click: A pinch gesture, where the thumb and index finger come together, simulates a left-click action.</p>
+            <p class="par">Right Click: A closed fist gesture signals a right-click function.</p>
+            <p class="par">Drag and Drop: Perform a drag by pinching with the thumb and index finger and holding the gesture while moving the hand. Release the pinch to drop.</p>
+            <p class="par">Scroll: Scroll up or down by moving the hand vertically while holding an open palm gesture.</p>
+            <h3>Voice Assistance for System Control</h3>
+            <p class="par">The Voice Assistance feature enhances the virtual mouse experience by allowing users to perform various system-level tasks using voice commands. This includes opening apps, controlling media, and checking system information:</p>
+            <p class="par"> Opening Applications: </p>
+            <p class="par">Users can open programs like browsers, media players, or file explorers by saying, "Open Chrome," "Open File Explorer," or similar commands.</p>
+            <p class="par">Status Commands:</p>
+            <p class="par">o Battery Check:</p>
+            <p class="par">Ask the system, "Check battery status," to get the current battery percentage and whether the device is charging.</p>
+            <p class="par">o Volume Level: </p>
+            <p class="par">Control the volume by saying commands like, "Increase volume," "Decrease volume," or "Mute."</p>
+            <p class="par">o Date and Time: </p>
+            <p class="par">Get the current date, time, and day by simply asking, "What's the time?" or "What's today's date?"</p>
+            <p class="par">o Media Control:</p>
+            <p class="par">-- Play/Pause Music: </p>
+            <p class="par"> Start or stop playing music with commands like, "Play music," or "Pause song."</p>
+            <p class="par">-- Next/Previous Song: </p>
+            <p class="par"> Navigate through your playlist by saying, "Next song," or "Previous song."</p>
+            <p class="par">o Browser Control:</p>
+            <p class="par">-- Open New Tab: </p>
+            <p class="par">Open a new browser tab by saying, "Open new tab."</p>
+            <p class="par">These voice commands provide a hands-free way to manage both system and media functions, further enhancing the user experience.</p>
+            <h3>Gesture for Special Functions </h3>   
+            <p class="par">Equals Gesture: To execute an action (such as confirming a selection or running a command), the user raises all fingers, signaling the system to complete the task.</p>
+            <p class="par">Clear Gesture: To reset or cancel an input or action, the user raises only the thumb and little finger. This predefined gesture serves as the clear command, allowing the user to back out of the current task or reset the input.</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

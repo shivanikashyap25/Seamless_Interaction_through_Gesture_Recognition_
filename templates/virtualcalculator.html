@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}"> 
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('vcaa') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('vcas') }}">SERVICE</a></li>
+                    <li><a href="{{ url_for('vcad') }}">DESIGN</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Virtual<br><span>Calculator</span><br></h1>
+            <p class="par">This Virtual Calculator leverages OpenCV and Mediapipe to create a scientific calculator controlled entirely through hand gestures. Using a webcam, the application captures hand movements and interprets them as inputs for performing a wide range of calculations, from basic arithmetic to complex operations like trigonometry, logarithmic functions, and integration. Users can interact with the calculator by performing specific hand gestures to select numbers, functions, and operations without any physical contact.</p>   
+
+            <div class="form">
+                <a href="{{ url_for('try_virtual_calculator') }}"><button class="btnn">Try it</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

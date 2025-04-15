@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}"> 
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 40;
+            overflow: hidden;
+            background-color: #837d7d; /* Set a dark background */
+            color: #ffffff; /* Set default text color to white */
+        }
+    
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: transparent; /* Remove white background */
+            color: #ffffff; /* Ensure text remains visible on dark background */
+        }
+    
+        .logo {
+            margin: 0;
+            color: #ff6600; /* Logo text color */
+        }
+    
+        .logo a {
+        text-decoration: none; /* Remove underline */
+        color:#ff6600; /* Set logo color to orange */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 30px;
+            color: #e7e4e1; /* Orange headings for better contrast */
+        }
+    
+        p {
+            text-align: justify; 
+            color: #cccccc; /* Lighter color for paragraphs */
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+           <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+        </div> 
+        <div class="content">
+            <h1>Virtual<br><span>Keyboard</span><br></h1>
+            <h2>Gesture-Based Keyboard Actions</h2>   
+            <p class="par">Type a Key: The user hovers their hand over a virtual key mapped on the screen, and by making a specific gesture (e.g., pinching or tapping gestures), the corresponding key is typed into the active text window such as Notepad.</p>
+            <p class="par">Delete a Character: The system recognizes a swiping gesture (e.g., left-to-right) to delete the last typed character.</p>
+            <p class="par">Space: A unique gesture, like tapping two fingers, adds a space between words.</p>
+            <p class="par">Enter: Raising all five fingers and closing them into a fist will signal the Enter key function.</p>   
+            <h2>Color Detection and Enhanced Tracking</h2>   
+            <p class="par">Optimization: In this stage of implementation, the system improves gesture recognition by focusing on green-colored objects, which are detected faster than other colors. This is especially useful for selecting keys and performing other typing actions with increased accuracy and speed.</p>
+            <p class="par">Hand Tracking: Mediapipe's hand landmark detection maps the hand's position to a virtual keyboard layout, allowing users to "press" keys by hovering their fingers over specific areas.</p>
+            <h2>Customization Features for Font</h2>   
+            <p class="par">Font Size Control: Users can change the font size of the text in Notepad using gestures or voice commands. For instance, raising the hand vertically with fingers spread wide will increase the font size, while closing the hand into a fist will decrease the font size.</p>
+            <p class="par">Font Color Control: To change the font color, users can use a circular motion gesture or simply voice a command like "Change font color to blue." Available colors include:
+                o    Black
+                o    Red
+                o    Blue
+                o    Green
+                o    Yellow
+                o    White
+                o    Cyan
+                o    Magenta
+            </p>
+            <p class="par">Bold/Italic/Underline: A specific gesture (such as two-finger pinching) or a voice command can toggle between text styles like bold, italic, or underline.</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

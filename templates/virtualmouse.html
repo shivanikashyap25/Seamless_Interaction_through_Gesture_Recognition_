@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}"> 
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('vma') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('vms') }}">SERVICE</a></li>
+                    <li><a href="{{ url_for('vmd') }}">DESIGN</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Virtual <span>Mouse</span><br>With <span>AI Assistance</span><br></h1>
+            <p class="par">The Virtual Mouse application integrates hand gesture recognition and voice commands to offer a seamless, touch-free way to control a computer mouse. Using a webcam, the system captures hand movements and interprets them into mouse actions such as moving the cursor, clicking, dragging, and scrolling. Along with gesture control, voice assistance is included for performing system-level commands, checking system status, and managing media, enhancing user interaction and productivity.</p>   
+            <div class="form">
+                <a href="{{ url_for('try_proton')}}"><button class="btnn">Try it</button></a>
+            </div>         
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

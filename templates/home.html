@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">AGS</h3>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('homea') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('homes') }}">SERVICE</a></li>
+                    <li><a href="{{ url_for('homed') }}">DESIGN</a></li>
+                    <li><a href="{{ url_for('homec') }}">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>AIR<br><span>GESTURE</span><br>SUITE</h1>
+            <p class="par">Air-gesture suite, an innovative project that combines the power of a virtual air canvas<br>a virtual keyboard, and a virtual mouse to revolutionize how we interact with technology.</p>   
+            <div class="form">
+                <button class="btnn"><a href="{{ url_for('virtual_keyboard') }}">Virtual Keyboard</a></button>
+                <button class="btnn"><a href="{{ url_for('virtual_canvas') }}">Virtual Canvas</a></button>
+                <button class="btnn"><a href="{{ url_for('virtual_calculator') }}">Virtual Calculator</a></button>
+                <button class="btnn"><a href="{{ url_for('virtual_mouse') }}">Virtual Mouse With AI Assistance</a></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

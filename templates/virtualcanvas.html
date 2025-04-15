@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}"> 
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('vca') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('vcs') }}">SERVICE</a></li>
+                    <li><a href="{{ url_for('vcd') }}">DESIGN</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Virtual<br><span>Canvas</span><br></h1>
+            <p class="par">This Virtual Drawing application utilizes OpenCV and Mediapipe to create an interactive drawing interface controlled by hand gestures. The application uses a webcam to capture hand movements and translates these into drawing actions on the screen. Users can select different drawing tools, colors, and shapes using hand gestures, and can also save their artwork.</p>   
+
+            <div class="form">
+                <a href="{{ url_for('try_virtual_canvas') }}"><button class="btnn">Try it</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

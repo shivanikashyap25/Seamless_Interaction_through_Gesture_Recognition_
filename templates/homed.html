@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title> 
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}"> 
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 40;
+            overflow: hidden;
+            background-color: #837d7d; /* Set a dark background */
+            color: #ffffff; /* Set default text color to white */
+        }
+    
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: transparent; /* Remove white background */
+            color: #ffffff; /* Ensure text remains visible on dark background */
+        }
+    
+        .logo {
+            margin: 0;
+            color: #ff6600; /* Logo text color */
+        }
+    
+        .logo a {
+        text-decoration: none; /* Remove underline */
+        color:#ff6600; /* Set logo color to orange */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 30px;
+            color: #e7e4e1; /* Orange headings for better contrast */
+        }
+    
+        p {
+            text-align: justify; 
+            color: #cccccc; /* Lighter color for paragraphs */
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+        </div> 
+        <div class="content">
+            <img src="{{ url_for('static' ,filename = 'design.png') }}" alt="Mediapipe Hand Rules" width=50% height=80%>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

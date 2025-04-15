@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}"> 
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+            <div class="menu">
+                <ul>
+                    <li><a href="{{ url_for('vka') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('vks') }}">SERVICE</a></li>
+                    <li><a href="{{ url_for('vkd') }}">DESIGN</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Virtual<br><span>Keyboard</span><br></h1>
+            <p class="par">
+                The Virtual Keyboard application offers an intuitive and hands-free way to type on a virtual keyboard using hand gestures. 
+                This system is particularly useful in environments where touch-based interactions may be inconvenient. 
+                Utilizing a webcam, the application tracks hand gestures to perform typing actions on an active text window like Notepad. 
+                With the integration of color detection to enhance gesture tracking, especially with green objects, and advanced features like font size, 
+                font color, and other text-related settings, the application provides a full-fledged virtual typing experience.
+            </p>   
+            <div class="form">
+                <a href="{{ url_for('try_virtual_keyboard') }}"><button class="btnn">Try it</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+

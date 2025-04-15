@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}"> 
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 40;
+            overflow: hidden;
+            background-color: #837d7d; /* Set a dark background */
+            color: #ffffff; /* Set default text color to white */
+        }
+    
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: transparent; /* Remove white background */
+            color: #ffffff; /* Ensure text remains visible on dark background */
+        }
+    
+        .logo {
+            margin: 0;
+            color: #ff6600; /* Logo text color */
+        }
+    
+        .logo a {
+        text-decoration: none; /* Remove underline */
+        color:#ff6600; /* Set logo color to orange */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 30px;
+            color: #e7e4e1; /* Orange headings for better contrast */
+        }
+    
+        p {
+            text-align: justify; 
+            color: #cccccc; /* Lighter color for paragraphs */
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+        </div> 
+        <div class="content">
+            <h1>Virtual <span>Mouse</span><br>With <span>AI Assistance</span><br></h1>
+            
+            <h2>Overview</h2>
+            <p class="par">The Virtual Mouse application integrates hand gesture recognition and voice commands to offer a seamless, touch-free way to control a computer mouse. Using a webcam, the system captures hand movements and interprets them into mouse actions such as moving the cursor, clicking, dragging, and scrolling. Along with gesture control, voice assistance is included for performing system-level commands, checking system status, and managing media, enhancing user interaction and productivity.</p>
+            <h2>Algorithms and Technologies Used</h2>   
+            <p class="par">OpenCV: Employed for real-time video input and processing, capturing the hand gestures and translating them into mouse actions.</p>
+            <p class="par">Mediapipe: Google's machine learning-based framework, used for detecting and tracking hand landmarks, allowing for precise and intuitive cursor control.</p>
+            <p class="par">Voice Assistance: Voice commands are integrated using services like Google Cloud Speech-to-Text, enabling hands-free interaction for performing various system and media tasks.</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

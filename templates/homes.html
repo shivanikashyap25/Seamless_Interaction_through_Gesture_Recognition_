@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename = 'style1.css') }}">  
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 40;
+            overflow: hidden;
+            background-color: #837d7d; /* Set a dark background */
+            color: #ffffff; /* Set default text color to white */
+        }
+    
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: transparent; /* Remove white background */
+            color: #ffffff; /* Ensure text remains visible on dark background */
+        }
+    
+        .logo {
+            margin: 0;
+            color: #ff6600; /* Logo text color */
+        }
+    
+        .logo a {
+        text-decoration: none; /* Remove underline */
+        color:#ff6600; /* Set logo color to orange */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 30px;
+            color: #e7e4e1; /* Orange headings for better contrast */
+        }
+    
+        p {
+            text-align: justify; 
+            color: #cccccc; /* Lighter color for paragraphs */
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+        </div> 
+        <div class="content">
+            <h1>Step into the Next Era of Immersive and Interactive Virtual Experiences.</h1>
+            <h1>Our Services :</h1> 
+            <h1>Virtual<br><span>Keyboard</span><br></h1>
+            <p class="par">The Virtual Keyboard application offers an intuitive and hands-free way to type on a virtual keyboard using hand gestures. 
+                This system is particularly useful in environments where touch-based interactions may be inconvenient. 
+                Utilizing a webcam, the application tracks hand gestures to perform typing actions on an active text window like Notepad.</p>
+                <h1>Virtual <span>Mouse</span><br>With <span>AI </span> Assistance<br></h1>
+            <p class="par">The Virtual Mouse application integrates hand gesture recognition and voice commands to offer a seamless, touch-free way to control a computer mouse. Using a webcam, the system captures hand movements and interprets them into mouse actions such as moving the cursor, clicking, dragging, and scrolling. Along with gesture control, voice assistance is included for performing system-level commands, checking system status, and managing media, enhancing user interaction and productivity.</p>
+            <h1>Virtual<br><span>Canvas</span></h1>
+            <p class="par">This Virtual Drawing application utilizes OpenCV and Mediapipe to create an interactive drawing interface controlled by hand gestures. The application uses a webcam to capture hand movements and translates these into drawing actions on the screen. Users can select different drawing tools, colors, and shapes using hand gestures, and can also save their artwork.</p>
+            <h1>Virtual<br><span>Calculator</span></h1>
+            <p class="par">This Virtual Calculator leverages OpenCV and Mediapipe to create a scientific calculator controlled entirely through hand gestures. Using a webcam, the application captures hand movements and interprets them as inputs for performing a wide range of calculations, from basic arithmetic to complex operations like trigonometry, logarithmic functions, and integration. Users can interact with the calculator by performing specific hand gestures to select numbers, functions, and operations without any physical contact.</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

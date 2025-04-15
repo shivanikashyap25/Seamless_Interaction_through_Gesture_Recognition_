@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'style1.css') }}"> 
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 40;
+            overflow: hidden;
+            background-color: #837d7d; /* Set a dark background */
+            color: #ffffff; /* Set default text color to white */
+        }
+    
+        .main {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: transparent; /* Remove white background */
+            color: #ffffff; /* Ensure text remains visible on dark background */
+        }
+    
+        .logo {
+            margin: 0;
+            color: #ff6600; /* Logo text color */
+        }
+    
+        .logo a {
+        text-decoration: none; /* Remove underline */
+        color:#ff6600; /* Set logo color to orange */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 30px;
+            color: #e7e4e1; /* Orange headings for better contrast */
+        }
+    
+        p {
+            text-align: justify; 
+            color: #cccccc; /* Lighter color for paragraphs */
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h3 class="logo">
+                    <a href="/">AGS</a></h3>
+            </div> 
+        </div> 
+        <div class="content">
+            <h1>Virtual<br><span>Canvas</span><br></h1>
+            <h2>Steps to Use the Virtual Canvas Application</h2> 
+            <h3>1.Launch the Application: </h3>  
+            <p class="par">Run the provided script to start the webcam and initialize the drawing interface.</p>
+            <h3>2.Color Selection: </h3>
+            <p class="par">Move your index finger to the color panel on the left side of the screen and select a color by pointing to it.</p>
+            <h3>3.Tool Selection: </h3>
+            <p class="par">Move your index finger to the tools panel on the right side of the screen and select a tool by pointing to it.</p>
+            <h3>4.Drawing: </h3>
+            <p class="par">Use the selected tool to draw on the screen by moving your hand within the webcam's view. Different gestures trigger different drawing actions:
+                o	Draw: Draw freeform lines by moving your finger.
+                o	Line, Rectangle, Circle, Ellipse, Triangle, Polygon, Star: Draw shapes by selecting the corresponding tool and performing gestures.
+                o	Eraser: Erase parts of the drawing by selecting the eraser tool and moving your finger over the areas to erase.
+            </p>   
+            <h3>5.Undo/Redo: </h3>   
+            <p class="par">Press 'Z' to undo the last action, and 'Y' to redo the undone action.</p>
+            <h3>6.Save Drawing: </h3>
+            <p class="par">Press 'S' to save the current drawing as "painted_image.png" with a white background.</h3>
+            <h3>7.Screen Shot: </h3>
+            <p class="par">Press 'Ctrl+S' to save the Screen Shot.</p>
+            <h3>8.Exit Application: </h3>
+            <p class ="par"> Press 'Q' or the ESC key to exit the application.</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
