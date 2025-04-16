@@ -1,5 +1,5 @@
 
-# 🖐️ **Humanizing Tech: The Gesture Revolution** 🎨🧠  
+# 🖐️ **Humanizing Tech: The Gesture Revolution** 🎨🧠   
 ## Bridging Reality & Digital Interaction Through Touchless Intelligence  
 [![IEEE Publication](https://img.shields.io/badge/Published%20in-IEEE%20Xplore-blue)](https://ieeexplore.ieee.org/document/10939637)  
 [![GitHub](https://img.shields.io/badge/View%20Code-GitHub-2ea44f)](https://github.com/Yashas14/Seamless_Interaction_through_Gesture_Recognition)
